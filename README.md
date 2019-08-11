@@ -1,6 +1,6 @@
 ![header](https://raw.githubusercontent.com/b9nc9/busfndr/master/header.png)
 
-> Egy egyszerű androidos alkalmazás, aminek a segítségével online is megtekintheted a menetrendjeid.
+> Egy egyszerű androidos alkalmazás, aminek a segítségével offline is megtekintheted a menetrendjeid.
 
 # Használat
 ![header](https://raw.githubusercontent.com/b9nc9/busfndr/master/preview.png)
