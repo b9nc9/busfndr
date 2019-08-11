@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp">
+
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="340dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/card_dark"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/jar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:ellipsize="marquee"
+                android:focusable="auto"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingEnd="0dp"
+                android:singleLine="true"
+                android:text="naponta"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kozlekedik" />
+
+            <TextView
+                android:id="@+id/kozlekedik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Közlekedik"
+                android:textAllCaps="true"
+                android:textColor="#7b7b7b"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/jar"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/idoe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="00:00"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/arrow"
+                app:layout_constraintStart_toEndOf="@+id/arrow"
+                app:layout_constraintTop_toTopOf="@+id/arrow" />
+
+            <TextView
+
+                android:id="@+id/idoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="00:00"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/varos" />
+
+            <TextView
+                android:id="@+id/megallo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Autóbusz állomás"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/megallo_txt" />
+
+            <TextView
+                android:id="@+id/honnan_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Indulás"
+                android:textAllCaps="true"
+                android:textColor="#7b7b7b"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/megallo_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Célállomás"
+                android:textAllCaps="true"
+                android:textColor="#7b7b7b"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/idoi"
+                app:layout_constraintStart_toEndOf="@+id/idoi"
+                app:layout_constraintTop_toTopOf="@+id/idoi"
+                app:srcCompat="@drawable/ic_arrow" />
+
+            <TextView
+                android:id="@+id/varos"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ellipsize="marquee"
+                android:focusable="auto"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="Debrecen"
+                android:textAlignment="viewStart"
+                android:textColor="#7b7b7b"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/honnan_txt" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#dddfe0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idoe"
+                app:layout_constraintVertical_bias="0.046" />
+
+            <ImageView
+                android:id="@+id/dotl"
+                android:layout_width="5dp"
+                android:layout_height="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view"
+                app:srcCompat="@drawable/ic_hcircleleft" />
+
+            <ImageView
+                android:id="@+id/dotr"
+                android:layout_width="5dp"
+                android:layout_height="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view"
+                app:srcCompat="@drawable/ic_hcircleright" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
